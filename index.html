@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <!-- Meta tags básicas para configuração da página -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Meta tags para SEO e descrição da página -->
+    <meta
+      name="description"
+      content="Portfólio pessoal - Desenvolvedor Web especializado em tecnologias modernas"
+    />
+    <meta
+      name="keywords"
+      content="portfólio, desenvolvedor, sistemas, mobile, web, HTML, CSS, JavaScript/Typescript, React, NextJS, Tailwind, Java, JDK EE, Springboot, Python, Ruby on Rails, PHP"
+    />
+    <meta name="author" content="Bruno Wallace de Freitas Franca" />
+
+    <!-- Meta tags para redes sociais (Open Graph) -->
+    <meta property="og:title" content="Meu Portfólio Pessoal" />
+    <meta
+      property="og:description"
+      content="Conheça meu trabalho e experiência como desenvolvedor de software"
+    />
+    <meta property="og:type" content="website" />
+
+    <!-- Cor do tema para navegadores mobile (será atualizada via JavaScript) -->
+    <meta name="theme-color" content="#1a1a1a" />
+
+    <title>Meu Portfólio Pessoal</title>
+
+    <!-- Google Fonts - Inter para títulos (fonte moderna de tecnologia) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Preload de recursos críticos para melhor performance -->
+    <link rel="preload" href="css/styles.css" as="style" />
+
+    <!-- Arquivo CSS principal com todos os estilos -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body data-theme="dark">
+    <!-- Skip link para navegação por teclado -->
+    <a href="#main-content" class="skip-link"
+      >Pular para o conteúdo principal</a
+    >
+
+    <!-- Navegação Principal - Barra de navegação fixa no topo -->
+    <nav class="main-nav" role="navigation" aria-label="Navegação principal">
+      <div class="nav-container">
+        <!-- Logo/marca do portfólio -->
+        <div class="nav-brand">
+          <a href="#sobre" aria-label="Ir para o início da página"
+            >Meu portifólio</a
+          >
+        </div>
+
+        <!-- Botão hamburger para menu mobile (visível apenas em telas pequenas) -->
+        <button
+          class="nav-toggle"
+          aria-label="Abrir menu de navegação"
+          aria-expanded="false"
+          aria-controls="nav-menu"
+        >
+          <span class="hamburger-line" aria-hidden="true"></span>
+          <span class="hamburger-line" aria-hidden="true"></span>
+          <span class="hamburger-line" aria-hidden="true"></span>
+        </button>
+
+        <!-- Menu de navegação com links para as seções -->
+        <ul class="nav-menu" role="menubar" id="nav-menu" aria-hidden="false">
+          <li role="none">
+            <a href="#sobre" role="menuitem" class="nav-link" tabindex="0"
+              >Sobre mim</a
+            >
+          </li>
+          <li role="none">
+            <a href="#formacao" role="menuitem" class="nav-link" tabindex="0"
+              >Formação</a
+            >
+          </li>
+          <li role="none">
+            <a href="#portfolio" role="menuitem" class="nav-link" tabindex="0"
+              >Portfólio</a
+            >
+          </li>
+          <li role="none">
+            <a href="#contato" role="menuitem" class="nav-link" tabindex="0"
+              >Contato</a
+            >
+          </li>
+        </ul>
+
+        <!-- Botão para alternar entre tema claro e escuro -->
+        <button
+          class="theme-toggle"
+          aria-label="Alternar para tema claro"
+          aria-pressed="true"
+        >
+          <span class="theme-icon" aria-hidden="true">☀️</span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Conteúdo Principal - Container para todas as seções do portfólio -->
+    <main id="main-content">
+      <!-- Seção Sobre Mim - Apresentação pessoal e profissional -->
+      <section
+        id="sobre"
+        class="section sobre-section"
+        aria-labelledby="sobre-title"
+      >
+        <div class="container">
+          <header class="section-header">
+            <h1 id="sobre-title" class="section-title">Sobre Mim</h1>
+          </header>
+
+          <!-- Layout em duas colunas: texto à esquerda, imagem à direita -->
+          <div class="sobre-content">
+            <!-- Coluna de texto com apresentação e hobbies -->
+            <div class="sobre-text">
+              <h2>Olá! Eu sou Bruno Wallace de F. Franca</h2>
+              <p class="intro-text">
+                Coordenador de TI/Telecom, Desenvolvedor Full Stack apaixonado por transformar ideias em
+                realidade digital. Me especializo em criar soluções inovadoras
+                que conectam tecnologia de ponta com experiências de usuário
+                excepcionais.
+              </p>
+              <p class="mission-text">
+                Minha missão é construir aplicações que não apenas funcionam
+                perfeitamente, mas que inspiram e facilitam a vida das pessoas.
+                Cada linha de código é uma oportunidade de fazer a diferença no
+                mundo digital.
+              </p>
+
+              <h3 id="hobbies-title">Meus Hobbies e Interesses</h3>
+              <!-- Lista de hobbies estilizada como tags -->
+              <ul
+                class="hobbies-list"
+                aria-labelledby="hobbies-title"
+                role="list"
+              >
+                <li role="listitem">Desenvolvimento de software</li>
+                <li role="listitem">Tecnologias emergentes</li>
+                <li role="listitem">Design de interfaces UI/UX</li>
+                <li role="listitem">Aprendizado contínuo</li>
+                <li role="listitem">Projetos open source</li>
+                <li role="listitem">Cloud Computing</li>
+                <li role="listitem">Automação</li>
+                <li role="listitem">Linux</li>
+                <li role="listitem">Cybersegurança</li>
+                <li role="listitem">Guitarra</li>
+                <li role="listitem">Viagens</li>
+                <li role="listitem">Música</li>
+                <li role="listitem">Vela</li>
+                <li role="listitem">Filosofia</li>
+                <li role="listitem">Religião</li>
+                <li role="listitem">Artes</li>
+                <li role="listitem">Gastronomia</li>
+              </ul>
+            </div>
+
+            <!-- Coluna da imagem de perfil -->
+            <div class="sobre-image">
+              <!-- Foto de perfil -->
+              <div class="profile-image-container">
+                <img
+                  src="imagens/profile.jpeg"
+                  alt="Foto de perfil de [Seu Nome]"
+                  class="profile-image"
+                  onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+                />
+                <!-- Fallback caso a imagem não carregue -->
+                <div
+                  class="profile-placeholder"
+                  style="display: none"
+                  role="img"
+                  aria-label="Espaço reservado para foto de perfil do desenvolvedor"
+                >
+                  <span aria-hidden="true">Foto</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Seção Formação - Educação, cursos e idiomas -->
+      <section
+        id="formacao"
+        class="section formacao-section"
+        aria-labelledby="formacao-title"
+      >
+        <div class="container">
+          <header class="section-header">
+            <h2 id="formacao-title" class="section-title">Formação</h2>
+          </header>
+
+          <div class="formacao-content">
+            <!-- Categoria: Educação formal -->
+            <div class="formacao-category">
+              <h3 id="educacao-title">Educação</h3>
+              <!-- Grid de cards para itens de educação -->
+              <div
+                class="formacao-cards"
+                role="group"
+                aria-labelledby="educacao-title"
+              >
+                <article class="formacao-card" tabindex="0">
+                  <div class="formacao-header">
+                    <div class="instituicao-logo">
+                      <img
+                        src="imagens/utfpr.jpeg"
+                        alt="Logo da Instituição de Ensino"
+                        onerror="this.style.display='none';"
+                      />
+                    </div>
+                    <div class="formacao-info">
+                      <h4>Curso Superior de Tecnologia em Sistemas de Telecomunicações</h4>
+                      <p class="instituicao">Universidade Tecnológica Federal do Paraná</p>
+                    </div>
+                  </div>
+                  <p class="periodo" aria-label="Período de estudo">
+                    2007 - 2010
+                  </p>
+                  <p class="descricao">
+                    Formação focada em redes de telecomunicações, eletrônica, desenvolvimento de software e tecnologias
+                    de comunicação.
+                  </p>
+                </article>
+
+                <article class="formacao-card" tabindex="0">
+                  <div class="formacao-header">
+                    <div class="instituicao-logo">
+                      <img
+                        src="imagens/uninter.jpeg"
+                        alt="Logo da Instituição de Ensino"
+                        onerror="this.style.display='none';"
+                      />
+                    </div>
+                    <div class="formacao-info">
+                      <h4>Bacharelado em Engenharia de Software</h4>
+                      <p class="instituicao">UNINTER</p>
+                    </div>
+                  </div>
+                  <p class="periodo" aria-label="Período de estudo">
+                    2024 - Cursando
+                  </p>
+                  <p class="descricao">
+                    Formação focada em desenvolvimento de software e tecnologias da cumputação.
+                  </p>
+                </article>
+              </div>
+            </div>
+
+            <!-- Categoria: Cursos e certificações complementares -->
+            <div class="formacao-category">
+              <h3 id="cursos-title">Cursos e Certificações</h3>
+              <!-- Grid responsivo de cards para cursos -->
+              <div
+                class="formacao-cards"
+                role="group"
+                aria-labelledby="cursos-title"
+              >
+                <article class="formacao-card" tabindex="0">
+                  <div class="formacao-header">
+                    <div class="instituicao-logo">
+                      <img
+                        src="imagens/alura.jpeg"
+                        alt="Logo da Plataforma Online"
+                        onerror="this.style.display='none';"
+                      />
+                    </div>
+                    <div class="formacao-info">
+                      <h4>Agile Coach: lidere a transformação nas empresas</h4>
+                      <p class="instituicao">Alura</p>
+                    </div>
+                  </div>
+                  <p class="periodo" aria-label="Ano de conclusão">2025</p>
+                  <p class="descricao">
+                    Lidere a transformação nas empresas.
+                  </p>
+                </article>
+
+                <article class="formacao-card" tabindex="0">
+                  <div class="formacao-header">
+                    <div class="instituicao-logo">
+                      <img
+                        src="imagens/alura.jpeg"
+                        alt="Logo da Certificação Online"
+                        onerror="this.style.display='none';"
+                      />
+                    </div>
+                    <div class="formacao-info">
+                      <h4>NEXT.JS E TAILWIND</h4>
+                      <p class="instituicao">Construindo um Design System</p>
+                    </div>
+                  </div>
+                  <p class="periodo" aria-label="Ano de conclusão">2025</p>
+                  <p class="descricao">
+                    Técnicas avançadas de design responsivo e acessibilidade.
+                  </p>
+                </article>
+
+                <article class="formacao-card" tabindex="0">
+                  <div class="formacao-header">
+                    <div class="instituicao-logo">
+                      <img
+                        src="imagens/linux.png"
+                        alt="Logo da Certificação Online"
+                        onerror="this.style.display='none';"
+                      />
+                    </div>
+                    <div class="formacao-info">
+                      <h4>LPIC-1: Exame 101 - Versão 5.0</h4>
+                      <p class="instituicao">SCertificação Linux</p>
+                    </div>
+                  </div>
+                  <p class="periodo" aria-label="Ano de conclusão">2025</p>
+                  <p class="descricao">
+                    Gerenciamento de servidores Linux.
+                  </p>
+                </article>
+
+                <article class="formacao-card" tabindex="0">
+                  <div class="formacao-header">
+                    <div class="instituicao-logo">
+                      <img
+                        src="imagens/alura.jpeg"
+                        alt="Logo da Certificação Online"
+                        onerror="this.style.display='none';"
+                      />
+                    </div>
+                    <div class="formacao-info">
+                      <h4>SPRING BOOT 3</h4>
+                      <p class="instituicao">Alura</p>
+                    </div>
+                  </div>
+                  <p class="periodo" aria-label="Ano de conclusão">2025</p>
+                  <p class="descricao">
+                    Aplique boas práticas e proteja uma API REST.
+                  </p>
+                </article>
+
+                <article class="formacao-card" tabindex="0">
+                  <div class="formacao-header">
+                    <div class="instituicao-logo">
+                      <img
+                        src="imagens/alura.jpeg"
+                        alt="Logo da Certificação Online"
+                        onerror="this.style.display='none';"
+                      />
+                    </div>
+                    <div class="formacao-info">
+                      <h4>Formação Java Spring Boot</h4>
+                      <p class="instituicao">Alura</p>
+                    </div>
+                  </div>
+                  <p class="periodo" aria-label="Ano de conclusão">2025</p>
+                  <p class="descricao">
+                    Técnicas avançadas de desenvolvimento com Java e Spring Boot.
+                  </p>
+                </article>
+
+                <article class="formacao-card" tabindex="0">
+                  <div class="formacao-header">
+                    <div class="instituicao-logo">
+                      <img
+                        src="imagens/alura.jpeg"
+                        alt="Logo da Certificação Online"
+                        onerror="this.style.display='none';"
+                      />
+                    </div>
+                    <div class="formacao-info">
+                      <h4>Next.js</h4>
+                      <p class="instituicao">Alura</p>
+                    </div>
+                  </div>
+                  <p class="periodo" aria-label="Ano de conclusão">2025</p>
+                  <p class="descricao">
+                    Autenticação e gerenciamento de Tokens JWT.
+                  </p>
+                </article>
+
+              </div>
+            </div>
+
+            <!-- Categoria: Idiomas com níveis de proficiência -->
+            <div class="formacao-category">
+              <h3 id="idiomas-title">Idiomas</h3>
+              <!-- Lista de idiomas em formato de cards simples -->
+              <div
+                class="idiomas-list"
+                role="group"
+                aria-labelledby="idiomas-title"
+              >
+                <div
+                  class="idioma-item"
+                  tabindex="0"
+                  role="group"
+                  aria-labelledby="portugues-label"
+                >
+                  <div class="idioma-info">
+                    <img
+                      src="imagens/brasil.svg"
+                      alt="Bandeira do Brasil"
+                      class="idioma-flag"
+                      onerror="this.style.display='none';"
+                    />
+                    <span class="idioma-nome" id="portugues-label"
+                      >Português</span
+                    >
+                  </div>
+                  <span
+                    class="idioma-nivel"
+                    aria-label="Nível de proficiência: Nativo"
+                    >Nativo</span
+                  >
+                </div>
+                <div
+                  class="idioma-item"
+                  tabindex="0"
+                  role="group"
+                  aria-labelledby="ingles-label"
+                >
+                  <div class="idioma-info">
+                    <img
+                      src="imagens/eua.svg"
+                      alt="Bandeira dos Estados Unidos"
+                      class="idioma-flag"
+                      onerror="this.style.display='none';"
+                    />
+                    <span class="idioma-nome" id="ingles-label">Inglês</span>
+                  </div>
+                  <span
+                    class="idioma-nivel"
+                    aria-label="Nível de proficiência: Intermediário"
+                    >Intermediário</span
+                  >
+                </div>
+                <div
+                  class="idioma-item"
+                  tabindex="0"
+                  role="group"
+                  aria-labelledby="espanhol-label"
+                >
+                  <div class="idioma-info">
+                    <img
+                      src="imagens/espanha.svg"
+                      alt="Bandeira da Espanha"
+                      class="idioma-flag"
+                      onerror="this.style.display='none';"
+                    />
+                    <span class="idioma-nome" id="espanhol-label"
+                      >Espanhol</span
+                    >
+                  </div>
+                  <span
+                    class="idioma-nivel"
+                    aria-label="Nível de proficiência: Básico"
+                    >Básico</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Seção Portfólio - Showcase dos projetos desenvolvidos -->
+      <section
+        id="portfolio"
+        class="section portfolio-section"
+        aria-labelledby="portfolio-title"
+      >
+        <div class="container">
+          <header class="section-header">
+            <h2 id="portfolio-title" class="section-title">Portfólio</h2>
+            <p class="section-subtitle">
+              Alguns dos meus projetos mais recentes
+            </p>
+          </header>
+
+          <!-- Grid responsivo para exibir projetos em cards -->
+          <div
+            class="portfolio-grid"
+            role="group"
+            aria-labelledby="portfolio-title"
+          >
+            <!-- Card do projeto 1 -->
+            <article class="portfolio-item" tabindex="0">
+              <!-- Área da imagem/preview do projeto -->
+              <div class="portfolio-image">
+                <img
+                  src="imagens/site-double.png"
+                  alt="Screenshot do Website Responsivo"
+                  class="project-image"
+                  onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+                />
+                <div
+                  class="project-placeholder"
+                  style="display: none"
+                  role="img"
+                  aria-label="Imagem de preview do Website Responsivo"
+                >
+                  <span aria-hidden="true">Site Double TI + Telecom</span>
+                </div>
+              </div>
+              <!-- Conteúdo textual do projeto -->
+              <div class="portfolio-content">
+                <h3>Website Responsivo - Double TI + Telecom</h3>
+                <p class="portfolio-description">
+                  Site institucional desenvolvido com NextJS e Tailwind,
+                  focado em performance, acessibilidade, segurança e observabilidade.
+                </p>
+                <!-- Tags das tecnologias utilizadas -->
+                <div
+                  class="portfolio-tech"
+                  role="list"
+                  aria-label="Tecnologias utilizadas"
+                >
+                <span class="tech-tag" role="listitem">NextJS</span>
+                <span class="tech-tag" role="listitem">Tailwind</span>
+                <span class="tech-tag" role="listitem">TypeScript</span>
+                <span class="tech-tag" role="listitem">Cyber Segurança</span>
+                  <span class="tech-tag" role="listitem">Google Analytcs</span>
+                </div>
+                <!-- Links para visualizar projeto e código -->
+                <div class="portfolio-links">
+                  <a
+                    href="https://doubletelecom.com.br"
+                    class="portfolio-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Ver projeto Website Double TI + Telecom (abre em nova aba)"
+                  >
+                    Ver Projeto
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <article class="portfolio-item" tabindex="0">
+              <div class="portfolio-image">
+                <div
+                  class="project-placeholder"
+                  role="img"
+                  aria-label="Imagem de preview do Dashboard Responsivo"
+                >
+                  <span aria-hidden="true">Intranet Avançada</span>
+                </div>
+              </div>
+              <div class="portfolio-content">
+                <h3>Intranet Avançada</h3>
+                <p class="portfolio-description">
+                  Sistema de intranet com cofre de senhas, gestão de sistemas, gestão de acessos e métricas avançadas de auditoria.
+                </p>
+                <div
+                  class="portfolio-tech"
+                  role="list"
+                  aria-label="Tecnologias utilizadas"
+                >
+                  <span class="tech-tag" role="listitem">NextJS</span>
+                  <span class="tech-tag" role="listitem">Tailwind</span>
+                  <span class="tech-tag" role="listitem">Prisma</span>
+                  <span class="tech-tag" role="listitem">BCrypt</span>
+                </div>
+                <div class="portfolio-links">
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Seção Contato - Formulário para envio de mensagens -->
+      <section
+        id="contato"
+        class="section contato-section"
+        aria-labelledby="contato-title"
+      >
+        <div class="container">
+          <header class="section-header">
+            <h2 id="contato-title" class="section-title">Contato</h2>
+            <p class="section-subtitle">
+              Vamos conversar sobre seu próximo projeto
+            </p>
+          </header>
+
+          <div class="contato-content">
+            <!-- Formulário de contato com validação JavaScript -->
+            <form class="contact-form" id="contactForm" novalidate>
+              <!-- Campo Nome -->
+              <div class="form-group">
+                <label for="name" class="form-label">Nome *</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  class="form-input"
+                  required
+                  aria-describedby="nameError"
+                  autocomplete="name"
+                />
+                <!-- Elemento para exibir mensagens de erro do campo nome -->
+                <span
+                  class="error-message"
+                  id="nameError"
+                  role="alert"
+                  aria-live="polite"
+                ></span>
+              </div>
+
+              <!-- Campo Email -->
+              <div class="form-group">
+                <label for="email" class="form-label">Email *</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="form-input"
+                  required
+                  aria-describedby="emailError"
+                  autocomplete="email"
+                />
+                <!-- Elemento para exibir mensagens de erro do campo email -->
+                <span
+                  class="error-message"
+                  id="emailError"
+                  role="alert"
+                  aria-live="polite"
+                ></span>
+              </div>
+
+              <!-- Campo Mensagem -->
+              <div class="form-group">
+                <label for="message" class="form-label">Mensagem *</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  class="form-textarea"
+                  rows="5"
+                  required
+                  aria-describedby="messageError"
+                  placeholder="Conte-me sobre seu projeto ou como posso ajudá-lo..."
+                ></textarea>
+                <!-- Elemento para exibir mensagens de erro do campo mensagem -->
+                <span
+                  class="error-message"
+                  id="messageError"
+                  role="alert"
+                  aria-live="polite"
+                ></span>
+              </div>
+
+              <!-- Botão de envio com estados de loading -->
+              <button type="submit" class="form-submit">
+                <span class="submit-text">Enviar Mensagem</span>
+                <span class="submit-loading" style="display: none"
+                  >Enviando...</span
+                >
+              </button>
+            </form>
+
+            <!-- Modal de confirmação de envio (controlado via JavaScript) -->
+            <div
+              class="success-modal"
+              id="successModal"
+              style="display: none"
+              role="dialog"
+              aria-labelledby="successTitle"
+              aria-modal="true"
+              aria-hidden="true"
+            >
+              <div class="modal-content">
+                <h3 id="successTitle">Mensagem Enviada!</h3>
+                <p>Obrigado pelo contato. Retornarei em breve!</p>
+                <button
+                  class="modal-close"
+                  id="modalClose"
+                  aria-label="Fechar modal de confirmação"
+                >
+                  Fechar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Rodapé - Informações de copyright e links de navegação -->
+    <footer class="main-footer" role="contentinfo">
+      <div class="container">
+        <div class="footer-content">
+          <p>
+            &copy; 2025 Meu Portfólio. Desenvolvimento Estático com HTML5, CSS3
+            e JavaScript.
+          </p>
+          <!-- Links de navegação duplicados no rodapé para melhor UX -->
+          <nav class="footer-links" aria-label="Navegação do rodapé">
+            <a href="#sobre" class="footer-link">Sobre</a>
+            <a href="#formacao" class="footer-link">Formação</a>
+            <a href="#portfolio" class="footer-link">Portfólio</a>
+            <a href="#contato" class="footer-link">Contato</a>
+          </nav>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Arquivo JavaScript principal com todas as funcionalidades interativas -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
